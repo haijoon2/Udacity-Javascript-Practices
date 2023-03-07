@@ -74,7 +74,7 @@ Starting at 99, and ending at 1 bottle.
  * - BE CAREFUL ABOUT THE PUNCTUATION AND THE EXACT WORDS TO BE PRINTED.
  */
 
-var num = 99;
+let num = 99;
 
 while (num > 0) {
   if (num === 1) {
@@ -110,3 +110,46 @@ while (num > 0) {
 }
 
 /* ------------------------------------ - ----------------------------------- */
+/* Directions:
+Write a while loop that counts down from 60 seconds and:
+
+If there's a task being completed, it prints out the task
+If there is no task being completed, it prints out the time as T-x seconds
+Use the task and time descriptions described above.
+
+Your Code:
+Your output should look like the following:
+
+T-60 seconds
+T-59 seconds
+T-58 seconds
+...
+T-51 seconds
+Orbiter transfers from ground to internal power
+T-49 seconds
+...
+T-3 seconds
+T-2 seconds
+T-1 seconds
+Solid rocket booster ignition and liftoff! */
+
+let count = 60;
+
+while (count >= 0) {
+  if (count === 50) {
+    console.log("Orbiter transfers from ground to internal power");
+  } else if (count === 31) {
+    console.log("Ground launch sequencer is go for auto sequence start");
+  } else if (count === 16) {
+    console.log("Activate launch pad sound suppression system");
+  } else if (count === 10) {
+    console.log("Activate main engine hydrogen burnoff system");
+  } else if (count === 6) {
+    console.log("Main engine start");
+  } else if (count === 0) {
+    console.log("Solid rocket booster ignition and liftoff!");
+  } else {
+    console.log("T-" + count + " seconds");
+  }
+  count -= 1;
+}
