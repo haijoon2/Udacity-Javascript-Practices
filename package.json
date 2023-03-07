@@ -1,0 +1,27 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "description": "your project description",
+  "main": "test.js",
+  "scripts": {
+    "postinstall": "git remote remove origin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "your-git-repositoru-url"
+  },
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "@types/eslint-plugin-prettier": "^3.1.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1"
+  },
+  "dependencies": {
+    "prettier": "^2.8.4"
+  }
+}
