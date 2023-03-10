@@ -89,36 +89,68 @@ function laugh2(num) {
 
 /* ------------------------------------ - ----------------------------------- */
 // [QUIZ] Build a Triangle (5-3)]
-// /*
- * Programming Quiz: Build A Triangle (5-3)
+/*
+ Programming Quiz: Build A Triangle (5-3)
 */
 
 /*
-* QUIZ REQUIREMENTS
-* - Your code should have a `buildTriangle()` function
-* - Your `buildTriangle()` function should take one argument (or you can say parameter)
-* - Your `laugh()` function should build the triangle as describe above
-*/
-
+ * QUIZ REQUIREMENTS
+ * - Your code should have a `buildTriangle()` function
+ * - Your `buildTriangle()` function should take one argument (or you can say parameter)
+ * - Your `laugh()` function should build the triangle as describe above
+ */
 
 // creates a line of * for a given length
 function makeLine(length) {
-   var line = "";
-   for (var j = 1; j <= length; j++) {
-       line += "* ";
-   }
-   return line + "\n";
+  let line = "";
+  for (let j = 1; j <= length; j++) {
+    line += "* ";
+  }
+  return line + "\n";
 }
 
 // your code goes here.  Make sure you call makeLine() in your own code.
 function buildTriangle(height) {
   let lines = "";
-  
+
   for (let i = 1; i <= height; i++) {
-      lines += makeLine(i);
+    lines += makeLine(i);
   }
   return lines;
 }
 
 // test your code by uncommenting the following line
 console.log(buildTriangle(10));
+
+/* ------------------------------------ - ----------------------------------- */
+// [Quiz Laugh (5-4)]
+// Directions:
+// Write an anonymous function expression that stores a function in a variable called "laugh" and
+// outputs the number of "ha"s that you pass in as an argument.
+//
+// laugh(3);
+// Returns: hahaha!
+//
+/*
+ * Programming Quiz: Laugh (5-4)
+ */
+
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have a variable `laugh`
+ * - Your code should include an anonymous function expression stored in the variable `laugh`
+ * - Your anonymous function expression should take one argument
+ * - Your anonymous function expression should return the correct number of `hahaha`\'s
+ */
+
+const laugh3 = function (num) {
+  let laugh = "";
+  for (let x = 0; x < num; x++) {
+    laugh += "ha";
+  }
+
+  return laugh + "!";
+};
+console.log(laugh3(10));
+
+/* ------------------------------------ - ----------------------------------- */
