@@ -145,7 +145,7 @@ console.log(buildTriangle(10));
 
 const laugh3 = function (num) {
   let laugh = "";
-  for (let x = 0; x < num; x++) {
+  for (let x = 1; x <= num; x++) {
     laugh += "ha";
   }
 
@@ -153,4 +153,31 @@ const laugh3 = function (num) {
 };
 console.log(laugh3(10));
 
+/* ------------------------------------ - ----------------------------------- */
+// [QUIZ: Cry (5-5)]
+// Directions:
+// Write a named function expression that stores the function in a variable called cry and returns "boohoo!".
+// Don't forget to call the function using the variable name, not the function name:
+//
+// cry();
+// Returns: boohoo!
+//
+//* Programming Quiz: Cry (5-5)
+
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have a variable `cry`
+ * - Your code should include a named function expression stored in the variable `cry`
+ * - Your code should call the function expression using the variable name, not the function name
+ * - Your function expression should return the expected output
+ * - BE CAREFUL ABOUT THE PUNCTUATION AND THE EXACT WORDS TO BE PRINTED.
+ */
+
+// your code goes here
+
+const cry = function namedCry() {
+  return "boohoo!";
+};
+
+cry();
 /* ------------------------------------ - ----------------------------------- */
