@@ -12,7 +12,7 @@ Your `umbrella` object should have an `open()` method that toggles the value of 
 Your `umbrella` object should have an `close()` method that toggles the value of `isOpen`
  */
 
-var umbrella = {
+const umbrella = {
   color: "pink",
   isOpen: true,
   open: function () {
@@ -24,7 +24,6 @@ var umbrella = {
     }
   },
   // your code goes here
-  isClose: true,
   close: function () {
     if (umbrella.isOpen === false) {
       // at first, I put :umbrella.isClose === true (WRONG)
@@ -56,4 +55,42 @@ const breakfast = {
 console.log(breakfast);
 
 /* ------------------------------------ - ----------------------------------- */
+/* Quiz: Bank Accounts 1 (7-3)
 
+Directions:
+Using the given object:
+add a printAccountSummary() method that returns the following account message:
+
+Welcome!
+Your balance is currently $1000 and your interest rate is 1%.
+
+QUIZ REQUIREMENTS
+ * - Your code should have an object `savingsAccount` 
+ * - Your `savingsAccount` object should have the `balance` and `interestRatePercent` property
+ * - Your `savingsAccount` object should have a `printAccountSummary()` method
+ * - Your `printAccountSummary()` method should return the EXACT expected message
+ * - BE CAREFUL ABOUT THE PUNCTUATION, SPACES, AND EXACT WORDS TO BE PRINTED.
+ */
+
+const savingsAccount = {
+  balance: 1000,
+  interestRatePercent: 1,
+  deposit: function addMoney(amount) {
+    if (amount > 0) {
+      savingsAccount.balance += amount;
+    }
+  },
+  withdraw: function removeMoney(amount) {
+    const verifyBalance = savingsAccount.balance - amount;
+    if (amount > 0 && verifyBalance >= 0) {
+      savingsAccount.balance -= amount;
+    }
+  },
+  // your code goes here
+  printAccountSummary: function () {
+    return "Welcome!\nYour balance is currently $1000 and your interest rate is 1%.";
+  },
+};
+
+console.log(savingsAccount.printAccountSummary());
+/* ------------------------------------ - ----------------------------------- */
